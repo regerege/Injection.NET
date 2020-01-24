@@ -15,6 +15,7 @@ namespace Injection.Core.Test
 
             var target = typeof(ClassSample).GetMethod("GetMethod5");
             var injection = ((Func<string>)GetMethod5_ClassSample).Method;
+
             using (Injection.Set(target, injection))
             {
                 cls.GetMethod5().Is("Injection.GetMethod5");
