@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Injection.Core.Test
+namespace Injection.Core
 {
     public static class ReflectionHelper
     {
