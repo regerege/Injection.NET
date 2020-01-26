@@ -55,8 +55,8 @@ namespace Injection.Core
 #endif
 
             // Backup
-            state.Address = new IntPtr((int)tar);
-            state.Value = new IntPtr(*(int*)tar);
+            state.Address = tar;
+            state.Value = *(IntPtr*)tar;
 
             // Injection
             *(IntPtr*)tar = value;
